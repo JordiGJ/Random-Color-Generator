@@ -1,0 +1,60 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  min-height: 100vh;
+  background-color: #fff;
+  font-family: cursive;
+  text-align: center;
+  padding: 1rem 1rem 5rem 1rem;
+}
+h1 {
+  text-align: center;
+  font-size: 2rem;
+  color: #000;
+  margin-top: 2rem;
+  margin-bottom: 1.5rem;
+}
+main {
+  max-width: 1300px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1rem;
+  margin: 0 auto;
+}
+div {
+  position: relative;
+  border: solid black 2px;
+  border-radius: 8px;
+  text-align: center;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 2px 5px 2px #ebebeb, 0 1px 5px 2px #ebebeb;
+}
+.colorP {
+  font-size: 1.5rem;
+  color: #fff;
+}
+i {
+  position: absolute;
+  color: #fff;
+  padding: 1rem;
+  bottom: 0;
+  right: 0;
+  cursor: pointer;
+  transform: scale(0.8);
+}
+.tooltip {
+  position: absolute;
+  color: #fff;
+  bottom: 5px;
+  padding: 1rem;
+  right: 2.3rem;
+  font-size: 0.8rem;
+}
